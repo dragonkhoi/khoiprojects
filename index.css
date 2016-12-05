@@ -14,8 +14,17 @@ body {
   /*background-image: url("images/background_light.jpg");*/
   overflow-x: hidden;
 }
+
+hr{
+    border: 0;
+    height: 1px;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 .projectBox{
   width: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -25,6 +34,21 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+.webEmbed {
+    position: relative;
+    padding-bottom: 60%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.webEmbed iframe {
+    position: absolute;
+    top:0;
+    left: 30%;
+    width: 40%;
+
+    height: 100%;
 }
 .video-container {
     position: relative;
@@ -41,14 +65,59 @@ body {
     height: 100%;
 }
 a{
-  color: rgb(255, 236, 179);
+  color: rgb(0, 0, 100);
   text-decoration: none;
   transition: 0.3s;
 }
 a:hover, a:visited:hover{
-  color: rgb(255, 210, 77);
+  color: rgb(40, 40, 250);
 }
 a:visited{
-  color: rgb(255, 236, 179);
+  color: rgb(0, 0, 170);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1020px){
+  body{
+    font-size: 0.7em;
+  }
+  hr{
+    width: 80%;
+  }
+  .projectBox{
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .descriptionBox{
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .webEmbed iframe {
+      position: absolute;
+      top:0;
+      left: 5%;
+      width: 90%;
+
+      height: 100%;
+  }
+  .webEmbed {
+      position: relative;
+      padding-bottom: 140%;
+      padding-top: 35px;
+      height: 0;
+      overflow: hidden;
+  }
+  .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 35px;
+      height: 0;
+      overflow: hidden;
+  }
 }
